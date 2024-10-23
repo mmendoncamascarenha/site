@@ -1,17 +1,50 @@
 @charset "UTF-8";
 
-/***** Breakpoints *****/
+/* Importação de font ( google fonts) */ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* CSS Reset (compatibilizar com todos navegadores */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Layout */ 
+body {
+    font-family: "Open Sans", serif;
+    font-size: 1em; /* 1em = 100% ( tamanho padrão )*/
+}
+
+.container{
+    margin: 0 auto; /* margem centralizada o bloco*/ 
+}
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Cabeçalho */
+header {
+    height: 80px;
+    background-color: rgb(236, 240, 17);
+}
 
+#logo img {
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px 0px 10px;
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
-    body {
-        background-color: #4B0082;
+    /* Cabeçalho */
+    #logo img {
+        margin: 0px 0px 55px 0px;
+    }
+    .container {
+        max-width: 540px;
+        background-color: #0ff;
     }
 }
 
@@ -20,19 +53,32 @@
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
-    body {
-        background-color: #FF8C00;
+    /* cABEÇALHO*/
+    .container {
+        max-width: 720px;
+        background-color: blue;
+    }
+    header{
+        height: 130px;
+    }
+    #logo img {
+        width: ;
+        background-color: ;
     }
 }
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
-    body {
-        background-color: #8A2BE2;
+    /* cabeçalho */
+    .container{
+        max-width: 960px;
+        background-color: #ffa500;
     }
+
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -40,10 +86,15 @@
 
 /* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
-    body {
-        background-color: #ff0000;
-        color: #ffff00
+    .container{
+        max-width: 1140;
+        background-color: aquamarine;
     }
+    #logo img {
+        width: 150px;
+        height: 140px;
+    }
+
 }
 
 
@@ -52,9 +103,13 @@
 
 /* Telas FullHd / 4k / smarTv >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1400px) {
-    body {
-        background-color: #8A2BE2;
-        color : #ffffff
+    .container{
+        max-width: 1360;
+        background-color: antiquewhite;
+    }
+    #logo img {
+        width: 128px;
+        height: 128px;
     }
 }
 
