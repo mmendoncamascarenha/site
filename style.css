@@ -3,6 +3,14 @@
 /* Importação de font ( google fonts) */ 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* variáveis */ 
+:root {
+    --azul: #05152b;
+    --branco: #fff;
+    --bege: #F5DEB3;
+
+}
+
 /* CSS Reset (compatibilizar com todos navegadores */
 *{
     margin: 0;
@@ -24,13 +32,54 @@ body {
 /* Cabeçalho */
 header {
     height: 80px;
-    background-color: rgb(236, 240, 17);
+    background-color: 	#D2B48C;
 }
 
 #logo img {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     margin: 0px 0px 0px 10px;
+}
+
+#check {
+    display: none;  
+}
+
+/* Efeito de deslizar o menu */
+/*Se check estiver "ticado", criar um estilo para ul */
+#check:checked~ul{
+    right: 0px;
+}
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0,0, 0, 0.6); /*  */
+}
+
+nav ul {
+    height: 100vh; /* 100vh - 100% altura da tela */
+    background-color: var(--bege);
+    list-style: none;
+    /*remover bullets */
+    width: 72%;
+    position: fixed;
+    top: 80px;
+    right: -80%;
+    transition: all 0.4s;
+    
+}
+
+nav ul li {
+    padding: 15px 20px 15px 20px;
+    border-bottom: 3px solid var(--branco);
+    text-align: right;
+}
+
+nav ul li a {
+    color: #8B4513;
+    text-decoration: none; /*remover sublinado*/
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -44,7 +93,7 @@ header {
     }
     .container {
         max-width: 540px;
-        background-color: #0ff;
+        background-color: 		#D2B48C;
     }
 }
 
@@ -56,14 +105,14 @@ header {
     /* cABEÇALHO*/
     .container {
         max-width: 720px;
-        background-color: blue;
+        background-color: 	#D2691E;
     }
     header{
         height: 130px;
     }
     #logo img {
-        width: ;
-        background-color: ;
+        width: 140px;
+        height: 140px;
     }
 }
 
@@ -77,6 +126,12 @@ header {
     .container{
         max-width: 960px;
         background-color: #ffa500;
+    }
+    #logo img {
+        width: 140px;
+        height: 140px;
+
+
     }
 
 }
