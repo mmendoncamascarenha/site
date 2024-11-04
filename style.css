@@ -8,6 +8,8 @@
     --azul: #05152b;
     --branco: #fff;
     --bege: #F5DEB3;
+    --preto:#000000;
+
 
 }
 
@@ -31,15 +33,15 @@ body {
     /* margem centralizada o bloco*/
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: center;
 
 }
 .botao{
     text-decoration: none;
-    color: #808080;
+    color: #fff;
     font-size: 1.3em;
     font-weight: 700;
-    background-color: #FF0000;
+    background-color: #000000;
     width: 200px;
     padding: 3px 0px;
     border: 2px solid #000000;
@@ -84,7 +86,7 @@ label {
 nav ul {
     height: 100vh;
     /* 100vh - 100% altura da tela */
-    background-color: var(--bege);
+    background-color: rgba(245, 245, 220 , 0.8);
     list-style: none;
     /*remover bullets */
     width: 72%;
@@ -140,12 +142,12 @@ main h2{
 
     /* Cabeçalho */
     #logo img {
-        margin: 0px 0px 55px 0px;
+        margin: 50px 0px 55px 0px;
     }
 
     .container {
         max-width: 540px;
-        background-color: #D2B48C;
+        background-color: transparent;
     }
 
     nav ul {
@@ -174,6 +176,7 @@ main h2{
     #logo img {
         width: 140px;
         height: 140px;
+        margin: 0px 0px;
     }
 
     nav ul {
@@ -181,7 +184,20 @@ main h2{
         width: 50%;
         right: -50%;
     }
+/*Banner*/
+
+main h1 {
+    font-size: 4.0em;
 }
+
+main h2{
+    font-size: 3.0em;
+    margin-top: 30px;
+}
+
+}
+
+
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -252,7 +268,7 @@ main h2{
     }
 
     nav ul li a:hover {
-        color: #FF0000;
+        color: #000000;
     }
 
 }
@@ -269,8 +285,8 @@ main h2{
     }
 
     #logo img {
-        width: 128px;
-        height: 128px;
+        width: 160px;
+        height: 140px;
     }
 }
 
