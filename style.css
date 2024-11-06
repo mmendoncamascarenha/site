@@ -111,8 +111,8 @@ nav ul li a {
 
 /* Banner */
 main {
-    height: 60vh; /* ajuste da altura do banner */
-    background: url(img/vacina.png);
+    height: 80vh; /* ajuste da altura do banner */
+    background: url(img/man.jpg);
     background-size: cover;
     background-position:center;
     display: flex;
@@ -135,8 +135,6 @@ main h2{
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
 
@@ -158,8 +156,6 @@ main h2{
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
 
@@ -196,13 +192,7 @@ main h2{
 }
 
 }
-
-
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
 
@@ -225,8 +215,6 @@ main h2{
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
 /* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
     .container {
@@ -275,8 +263,6 @@ main h2{
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
 /* Telas FullHd / 4k / smarTv >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1400px) {
     .container {
