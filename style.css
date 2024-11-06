@@ -112,7 +112,7 @@ nav ul li a {
 /* Banner */
 main {
     height: 80vh; /* ajuste da altura do banner */
-    background: url(img/man.jpg);
+    background: url(img/mano.jpg);
     background-size: cover;
     background-position:center;
     display: flex;
