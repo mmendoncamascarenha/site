@@ -8,7 +8,7 @@
     --azul: #05152b;
     --branco: #fff;
     --bege: #F5DEB3;
-    --preto:#000000;
+    --preto: #000000;
 
 
 }
@@ -20,7 +20,7 @@
     border: 0;
 }
 
-/* Layout */
+/************************************************* Layout******************************************/
 body {
     font-family: "Open Sans", serif;
     font-size: 1em;
@@ -36,7 +36,8 @@ body {
     align-items: center;
 
 }
-.botao{
+
+.botao {
     text-decoration: none;
     color: #fff;
     font-size: 1.3em;
@@ -51,8 +52,15 @@ body {
 
 }
 
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* Cabeçalho */
+/********************************************fim layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
+/************************************************ Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
+/******************************************************* Cabeçalho *****************************************/
 header {
     height: 80px;
     /*background-color: #D2B48C;*/
@@ -61,7 +69,7 @@ header {
 #logo img {
     width: 85px;
     height: 85px;
-    margin: 0px 0px 0px 10px;
+    margin: 10px 0px 0px 10px;
 }
 
 #check {
@@ -86,7 +94,7 @@ label {
 nav ul {
     height: 100vh;
     /* 100vh - 100% altura da tela */
-    background-color: rgba(245, 245, 220 , 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     list-style: none;
     /*remover bullets */
     width: 72%;
@@ -104,65 +112,76 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #8B4513;
+    color: #fff;
     text-decoration: none;
     /*remover sublinado*/
 }
 
-/* Banner */
+/************************************************** Banner ***************************************************/
 main {
-    height: 80vh; /* ajuste da altura do banner */
+    height: 100vh;
+    /* ajuste da altura do banner */
     background: url(img/mano.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-main h1, h2{
-    color:#000000;
-    text-shadow: #0a0a0a 0.05em 0.05em 0.05em; /* sombra */
+
+main h1,
+h2 {
+    color: #000000;
+    text-shadow: #0a0a0a 0.05em 0.05em 0.05em;
+    /* sombra */
 }
+
 main h1 {
     font-size: 3em;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-main h2{
-    font-size: 1.5em;
+
+main h2 {
+    font-size: 2em;
     margin-top: 20px;
 }
 
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 576px) {
+/*>>>>>>>>>>>>>>>>>>>>>>>>>> 
+>>>>>>>>>>>>>>>>>>>>>>>>Fim do Portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+
+
+/************************************************* Smartphone Landscape ***********************************/
+@media (min-width: 576px) {
+    .container {
+        max-width: 650px;
+        background-color: transparent;
+    }
     /* Cabeçalho */
     #logo img {
-        margin: 50px 0px 55px 0px;
-    }
-
-    .container {
-        max-width: 540px;
-        background-color: transparent;
+        margin: 70px 170px 55px 0px;
     }
 
     nav ul {
         top: 80px;
-        width: 50%;
+        width: 40%;
         right: -50%;
     }
 }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*************************************************Fim Landscape******************************************/
+
+
+
+/****************************************** Tablet Portrait **********************************************/
 @media (min-width: 768px) {
 
-    /* cABEÇALHO*/
+    /* CABEÇALHO*/
     .container {
         max-width: 720px;
-       /* background-color: #D2B48C; */
+        /* background-color: #D2B48C; */
     }
 
     header {
@@ -180,20 +199,24 @@ main h2{
         width: 50%;
         right: -50%;
     }
-/*Banner*/
 
-main h1 {
-    font-size: 4.0em;
+    /**************************************************Banner*****************************************************/
+
+    main h1 {
+        font-size: 4.0em;
+    }
+
+    main h2 {
+        font-size: 3.0em;
+        margin-top: 30px;
+    }
+
 }
 
-main h2{
-    font-size: 3.0em;
-    margin-top: 30px;
-}
+/********************************************Fim do tablet portrait*************************************************/
 
-}
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/********************************************** Tablet Landscape ********************************************/
 @media (min-width: 992px) {
 
     /* cabeçalho */
@@ -214,12 +237,15 @@ main h2{
     }
 }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*********************************************Fim do tablet landscape*****************************************/
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
     .container {
         max-width: 1240;
-        /*background-color: #f50505;*/
+        /*background-color: #f50505; cor do cabeçalho do computador*/
     }
 
     /* Cabeçalho */
@@ -262,8 +288,11 @@ main h2{
 }
 
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* Telas FullHd / 4k / smarTv >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/************************************************Fim do PCs/ Notebook******************************************/
+
+
+
+/********************************************* Telas FullHd / 4k / smarTv ************************************/
 @media (min-width: 1400px) {
     .container {
         max-width: 1360;
@@ -276,4 +305,4 @@ main h2{
     }
 }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/***********************************************Fim das telas fullhd******************************************/
