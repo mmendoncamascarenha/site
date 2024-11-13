@@ -25,6 +25,7 @@ body {
     font-family: "Open Sans", serif;
     font-size: 1em;
     /* 1em = 100% ( tamanho padrão )*/
+    background-color: var(--background);
 }
 
 .container {
@@ -63,13 +64,13 @@ body {
 /******************************************************* Cabeçalho *****************************************/
 header {
     height: 80px;
-    /*background-color: #D2B48C;*/
+    /*background-color: 	#D2B48C;*/
 }
 
 #logo img {
     width: 85px;
     height: 85px;
-    margin: 10px 0px 0px 10px;
+    
 }
 
 #check {
@@ -79,7 +80,7 @@ header {
 /* Efeito de deslizar o menu */
 /*Se check estiver "ticado", criar um estilo para ul */
 #check:checked~ul {
-    right: 0px;
+    right: 0;
 }
 
 label {
@@ -87,20 +88,21 @@ label {
     position: fixed;
     top: 5px;
     right: 15px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
     /*  */
 }
 
 nav ul {
-    height: 100vh;
+    list-style: none;
     /* 100vh - 100% altura da tela */
     background-color: rgba(0, 0, 0, 0.8);
-    list-style: none;
+     height: 100vh;
     /*remover bullets */
-    width: 72%;
+
     position: fixed;
     top: 80px;
     right: -80%;
+    width: 72%;
     transition: all 0.4s;
 
 }
@@ -121,7 +123,7 @@ nav ul li a {
 main {
     height: 100vh;
     /* ajuste da altura do banner */
-    background: url(img/mano.jpg);
+    background: url(img/semcoroa.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -130,146 +132,195 @@ main {
     text-align: center;
 }
 
-main h1,
-h2 {
-    color: #000000;
-    text-shadow: #0a0a0a 0.05em 0.05em 0.05em;
+main h1,h2 {
+    text-shadow: #000 0.08em 0.08em 0.08em;
     /* sombra */
 }
 
 main h1 {
+    color: var(--branco);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+
 }
 
 main h2 {
+    color: var(--branco);
     font-size: 2em;
     margin-top: 20px;
+    font-weight: 800;
 }
 
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>> 
->>>>>>>>>>>>>>>>>>>>>>>>Fim do Portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>Fim do Portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/********************************************destaque***********************************************/
+/**********************destaque***********************************************************/
+#destaque {
+    background: url(img/back1.jpg);
+    background: size;
+    background-position: center;
+    /*espaçamento interno para nao encostar na borda da tela do dispositivo*/
+    padding: 50px 15px;
+}
+/* Atenção Organizado o container após o destaque o estilo é aplicado apenas ao container da seção de destaque */
+#destaque .container{
+    flex-direction: column;
+    align-items: center;
+}
+/*#imagemDestaque{
+    display: none;
+}*/
+#imagemDestaque img{
+    width: 200px;
+    height: 200px;
+    /*arrendondar uma imagem quadrada */
+    border-radius: 50%;
+}
+#textoDestaque{
+    color: var(--branco);
+}
+#textoDestaque h2{
+    margin-bottom:20px ;
+}
+/* Atenção !!! detalhe do sinal ">" é referente ao elemento imediato*/
+#textoDestaque>p{
+    color: var(--azul);
+} 
+.topicos{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
 
+.topicos img{
+    margin-right: 5px;
+}
 
+.topicos p{
+    font-weight: 600;
+}
 
-/************************************************* Smartphone Landscape ***********************************/
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
+
+    /****** Layout ******/
     .container {
-        max-width: 650px;
-        background-color: transparent;
-    }
-    /* Cabeçalho */
-    #logo img {
-        margin: 70px 170px 55px 0px;
+        max-width: 540px;
+        /* background-color: #ffff00;*/
     }
 
+    /****** Cabeçalho ******/
     nav ul {
-        top: 80px;
-        width: 40%;
-        right: -50%;
-    }
-}
-
-/*************************************************Fim Landscape******************************************/
-
-
-
-/****************************************** Tablet Portrait **********************************************/
-@media (min-width: 768px) {
-
-    /* CABEÇALHO*/
-    .container {
-        max-width: 720px;
-        /* background-color: #D2B48C; */
+        right: -25%;
+        width: 25%;
     }
 
-    header {
-        height: 130px;
+    /****** Banner ******/
+    main {
+        height: 100vh;
     }
-
-    #logo img {
-        width: 140px;
-        height: 140px;
-        margin: 0px 0px;
-    }
-
-    nav ul {
-        top: 130px;
-        width: 50%;
-        right: -50%;
-    }
-
-    /**************************************************Banner*****************************************************/
 
     main h1 {
-        font-size: 4.0em;
+        font-size: 3em;
     }
-
-    main h2 {
-        font-size: 3.0em;
-        margin-top: 30px;
-    }
-
 }
 
-/********************************************Fim do tablet portrait*************************************************/
+    /******************destaque*************************************************************/
+    #destaque .container{
+        flex-direction: row;
+    }
+    #imagemDestaque{
+        margin-right: 50px;
+    }
+    #imagemDestaque img{
+        width: 256px;
+        height: 256px;
+    }
 
 
-/********************************************** Tablet Landscape ********************************************/
+/* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 768px) {
+
+    /******* Layout ******/
+    .container {
+        max-width: 720px;
+        /* background-color: #00ff00; */
+    }
+
+    /****** Banner ******/
+    main {
+        height: 80vh;
+    }
+
+    main h1 {
+        font-size: 4em;
+    }
+}
+/****************************destaque***************************************************************/
+#imagemDestaque img{
+    width: 400px;
+    height: 400px;
+}
+    
+
+
+/* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
 
-    /* cabeçalho */
+    /****** Layout ******/
     .container {
         max-width: 960px;
-        /*background-color: #D2B48C;*/
+        /* background-color: #ffa500; */
     }
 
-    #logo img {
-        width: 140px;
-        height: 140px;
+    /****** Banner ******/
+    main {
+        height: 70vh;
     }
-
-    nav ul {
-        top: 130px;
-        width: 50%;
-        right: -50%;
-    }
+   
 }
 
-/*********************************************Fim do tablet landscape*****************************************/
+
+/* Fim | Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
+
+    /****** Layout ******/
     .container {
-        max-width: 1240;
-        /*background-color: #f50505; cor do cabeçalho do computador*/
+        max-width: 1140px;
+        /* background-color: #ff009d; */
     }
 
-    /* Cabeçalho */
+    /****** Cabeçalho ******/
     header {
-        height: 140px;
+        height: 100px;
     }
 
     #logo img {
-        width: 140px;
-        height: 140px;
-        margin: 0px 0px;
+        width: 194px;
+        height: 194px;
     }
 
-    /* Tranformação do menu */
+    /* Transformação do menu */
     label {
         display: none;
     }
 
     nav ul {
+        margin-top: 25px;
         width: 100%;
         height: auto;
         position: static;
+        /* remover a cor do background */
         background-color: transparent;
-        /*remover a cor do background */
     }
 
     nav ul li {
@@ -282,27 +333,49 @@ main h2 {
     }
 
     nav ul li a:hover {
-        color: #000000;
+        color: var(--amarelo);
     }
 
+    /****** Banner ******/
+    main h1 {
+        font-size: 6em;
+    }
+
+    main h2 {
+        font-size: 3em;
+    }
+     /********************************destaque************************/
+     #destaque {
+        /* o codigo a baico fixa o banner */
+        background-attachment: fixed;
+    }
 }
 
-
-/************************************************Fim do PCs/ Notebook******************************************/
-
+/* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-/********************************************* Telas FullHd / 4k / smarTv ************************************/
+/* Telas Grandes (FullHD / 4K / SmartTV) >>>>>>>>>>>*/
 @media (min-width: 1400px) {
+
+    /****** Layout ******/
     .container {
-        max-width: 1360;
-        /*background-color:#D2B48C;*/
+        max-width: 1440px;
+        /*background-color: #7d5b8c; 
     }
 
-    #logo img {
-        width: 160px;
-        height: 140px;
+    /****** Banner ******/
+    main {
+        height: 100vh;
+    }
+
+    main h1 {
+        font-size: 6.5em;
+    }
+
+    main h2 {
+        font-size: 4em;
     }
 }
+}
 
-/***********************************************Fim das telas fullhd******************************************/
+/* Fim | Telas Grandes (FullHD / 4K / SmartTV) >>>>>*/
