@@ -9,7 +9,9 @@
     --branco: #fff;
     --bege: #F5DEB3;
     --preto: #000000;
-
+    --vermelho: #FF0000;
+    --cinza: #808080;
+    --cinzaescuro: #4F4F4F;
 
 }
 
@@ -88,7 +90,7 @@ label {
     position: fixed;
     top: 5px;
     right: 15px;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(252, 255, 253, 0.8);
     /*  */
 }
 
@@ -157,7 +159,7 @@ main h2 {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>Fim do Portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /************************************************DESTAQUE**************************************************/
 #destaque {
-    background: url(img/academia.jpg);
+    background: url(img/backgrounf5.jpg);
     background: size;
     background-position: center;
     /*espaçamento interno para nao encostar na borda da tela do dispositivo*/
@@ -165,7 +167,7 @@ main h2 {
 }
 
 /* Atenção Organizado o container após o destaque o estilo é aplicado apenas ao container da seção de destaque */
-#destaque .container{
+#destaque .container {
     flex-direction: column;
     align-items: center;
 }
@@ -174,8 +176,67 @@ main h2 {
     display: center;
     align-items: center;
 }*/
-#imagemdestaque img{
-    witdh:200px;
+#imagemdestaque img {
+    width: 200px;
+    height: 200px;
+    /*arrendondar uma imagem quadrada*/
+    border-radius: 50%;
+}
+
+#textodestaque {
+    color: var(--branco);
+}
+
+#textodestaque h2 {
+    margin-bottom: 20px;
+}
+
+/* Atenção !!! detalhe do sinal ">" é referente ao elemento imediato*/
+#textodestaque>p {
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.topicos {
+    display: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.topicos img {
+    margin-right: 5px;
+}
+
+.topicos p {
+    font-weight: 700;
+}
+
+/*************************************sobre*************************/
+#sobre .container {
+    flex-direction: column;
+}
+
+#sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2,
+p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
+}
+
+#sobre {
+    background-color: #4F4F4F;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -201,21 +262,29 @@ main h2 {
     main h1 {
         font-size: 4em;
     }
+
+    /******************destaque*************************************************************/
+    #destaque .container {
+        flex-direction: column;
+    }
+
+    #imagemdestaque {
+        margin-right: 90px;
+    }
+
+    #imagemDestaque img {
+        width: 256px;
+        height: 256px;
+    }
+    /******sobre******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
+        
+    }
+
 }
 
-/******************destaque*************************************************************/
-#destaque .container {
-    flex-direction: row;
-}
-
-#imagemDestaque {
-    margin-right: 50px;
-}
-
-#imagemDestaque img {
-    width: 256px;
-    height: 256px;
-}
 
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -284,13 +353,37 @@ main h2 {
 
     }
 
+    /****************************destaque***************************************************************/
+    #imagemDestaque img {
+        width: 500px;
+        height: 400px;
+    }
+
+    #imagemdestaque {
+        margin-right: 90px;
+    }
+
+    #textodestaque {
+        color: var(--branco);
+        font-size: 1.3em;
+    }
+
+    #textodestaque>p {
+        color: var(--branco);
+        font-size: 1.2em;
+    }
+
+    .topicos p {
+        font-weight: 700;
+    }
+    /******sobre******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
+        
+    }
 }
 
-/****************************destaque***************************************************************/
-#imagemDestaque img {
-    width: 400px;
-    height: 400px;
-}
 
 
 
@@ -392,6 +485,14 @@ main h2 {
         /* o codigo a baico fixa o banner */
         background-attachment: fixed;
     }
+    /******sobre******/
+    #sobre .container {
+        flex-direction: row; 
+        align-items: center;
+         }
+         #video iframe {
+             margin: 0;
+         }
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
