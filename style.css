@@ -160,7 +160,8 @@ main h2 {
 /************************************************DESTAQUE**************************************************/
 #destaque {
     background: url(img/backgpt.jpg);
-    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem de fundo */
     background-position: center;
     /*espaçamento interno para nao encostar na borda da tela do dispositivo*/
     padding: 50px 15px;
@@ -189,16 +190,18 @@ main h2 {
 
 #textodestaque h2 {
     margin-bottom: 20px;
+
 }
 
 /* Atenção !!! detalhe do sinal ">" é referente ao elemento imediato*/
 #textodestaque>p {
     color: var(--preto);
     font-weight: 700;
+    font-size: 1.2em;
 }
 
 .topicos {
-    display: flex; 
+    display: flex;
     /*flex-direction: column; /* Organiza os itens em uma coluna */
     align-items: center;
     margin-top: 15px;
@@ -277,11 +280,19 @@ p {
         width: 256px;
         height: 256px;
     }
+
     /******sobre******/
     #video iframe {
         width: 560px;
         height: 315px;
-        
+
+    }
+
+    #textodestaque>p {
+        color: var(--branco);
+        font-weight: 700;
+        padding: 20px 0px 0px 0px;
+        font-size: 1.2em;
     }
 
 }
@@ -371,17 +382,25 @@ p {
 
     #textodestaque>p {
         color: var(--branco);
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     .topicos p {
+        color: var(--branco);
         font-weight: 700;
+        font-size: 1.2em;
     }
-    /******sobre******/
+
+    /******sobre***********************************/
     #video iframe {
         width: 560px;
         height: 315px;
-        
+    }
+
+    #sobre h2,
+    p {
+        color: var(--branco);
+        font-size: 1.4em;
     }
 }
 
@@ -389,7 +408,6 @@ p {
 
 
 /* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
@@ -419,6 +437,7 @@ p {
         transition: all 0.5s;
 
     }
+
 
 }
 
@@ -486,14 +505,16 @@ p {
         /* o codigo a baico fixa o banner */
         background-attachment: fixed;
     }
+
     /******sobre******/
     #sobre .container {
-        flex-direction: row; 
+        flex-direction: row;
         align-items: center;
-         }
-         #video iframe {
-             margin: 0;
-         }
+    }
+
+    #video iframe {
+        margin: 0;
+    }
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
