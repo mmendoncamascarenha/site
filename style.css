@@ -157,9 +157,10 @@ main h2 {
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>Fim do Portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 /************************************************DESTAQUE**************************************************/
 #destaque {
-    background: url(img/backgpt.jpg);
+    background: url(img/backescurecida.jpg);
     background-size: cover;
     /* Ajusta o tamanho da imagem de fundo */
     background-position: center;
@@ -208,7 +209,7 @@ main h2 {
 }
 
 .topicos img {
-    margin-right: 5px;
+    margin-right: 1px;
 }
 
 .topicos p {
