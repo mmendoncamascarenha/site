@@ -159,7 +159,7 @@ main h2 {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>Fim do Portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /************************************************DESTAQUE**************************************************/
 #destaque {
-    background: url(img/backgrounf5.jpg);
+    background: url(img/backgpt.jpg);
     background: size;
     background-position: center;
     /*espaçamento interno para nao encostar na borda da tela do dispositivo*/
@@ -193,7 +193,7 @@ main h2 {
 
 /* Atenção !!! detalhe do sinal ">" é referente ao elemento imediato*/
 #textodestaque>p {
-    color: var(--branco);
+    color: var(--preto);
     font-weight: 700;
 }
 
