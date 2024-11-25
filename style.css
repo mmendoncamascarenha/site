@@ -160,7 +160,7 @@ main h2 {
 /************************************************DESTAQUE**************************************************/
 #destaque {
     background: url(img/backgpt.jpg);
-    background: size;
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
     background-position: center;
     /*espaçamento interno para nao encostar na borda da tela do dispositivo*/
     padding: 50px 15px;
@@ -198,7 +198,8 @@ main h2 {
 }
 
 .topicos {
-    display: column;
+    display: flex; 
+    /*flex-direction: column; /* Organiza os itens em uma coluna */
     align-items: center;
     margin-top: 15px;
 }
