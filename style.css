@@ -136,7 +136,7 @@ main {
 
 main h1,
 h2 {
-    text-shadow: #000 0.09em 0.09em 0.09em;
+    text-shadow: #000 0.1em 0.1em 0.1em;
     /* sombra */
 }
 
@@ -153,6 +153,28 @@ main h2 {
     font-size: 2em;
     margin-top: 10px;
     font-weight: 900;
+}
+
+/****************************************************faixa de destaque*************************************/
+#faixaDestaque{
+    background: url(img/backescurecida.jpg);
+    background-size: cover; 
+    background-position: center;
+    padding: 50px 15px;
+}
+#faixaDestaque .container{
+    flex-direction: column;
+}
+#imagemFaixa img{
+    width: 256px;
+    height: 150px;
+}
+#textoFaixa h2 {
+    color: var(--vermelho);
+    margin-bottom: 15px;
+}
+#textofaixa p {
+    margin-bottom: 50px;
 }
 
 
@@ -187,6 +209,9 @@ main h2 {
 
 #textodestaque {
     color: var(--branco);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #000 0.9em 0.9em 0.9em;
+
 }
 
 #textodestaque h2 {
@@ -196,7 +221,7 @@ main h2 {
 
 /* Atenção !!! detalhe do sinal ">" é referente ao elemento imediato*/
 #textodestaque>p {
-    color: var(--preto);
+    color: var(--branco);
     font-weight: 700;
     font-size: 1.2em;
 }
@@ -507,7 +532,7 @@ p {
         background-attachment: fixed;
     }
 
-    /******sobre******/
+    /****************************************sobre*******************************/
     #sobre .container {
         flex-direction: row;
         align-items: center;
@@ -516,6 +541,20 @@ p {
     #video iframe {
         margin: 0;
     }
+    /**********************************faixa de destaque******************/
+    #faixaDestaque{
+        background-attachment: fixed;
+    }
+    #faixaDestaque .container{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #imagemFaixa img{
+        width: 300px;
+    }
+
+
+
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
