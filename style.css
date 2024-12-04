@@ -6,12 +6,15 @@
 /* variáveis */
 :root {
     --azul: #05152b;
+    --azulclaro:#064996;
     --branco: #fff;
     --bege: #F5DEB3;
     --preto: #000000;
     --vermelho: #FF0000;
     --cinza: #808080;
     --cinzaescuro: #4F4F4F;
+    --chocolate: #D2691E;
+    --roxobemescuro:#362121;
 
 }
 
@@ -53,6 +56,48 @@ body {
     align-self: center;
     margin-top: 20px;
 
+}
+
+#conteudo {
+    background-color: #4F4F4F;
+}
+
+.card {
+    width: 330px;
+    height: 600px;
+    margin-top: 15px;
+    background-color: #7d7d6d;
+    border: 1px solid var(--preto);
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+    height: 338px;
+    width: 330px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    /*color: #D2691E;*/
+
+}
+
+.card p {
+    text-align: left;
+    padding: 5px 40px 10px 40px;
+    max-height: 160px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card a {
+    padding: 1px 30px;
+    /*border: 0;*/
+    background-color: var(--branco);
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /********************************************fim layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -156,26 +201,65 @@ main h2 {
 }
 
 /****************************************************faixa de destaque*************************************/
-#faixaDestaque{
+#faixaDestaque {
     background: url(img/backescurecida.jpg);
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     padding: 50px 15px;
 }
-#faixaDestaque .container{
+
+#faixaDestaque .container {
     flex-direction: column;
+
 }
-#imagemFaixa img{
+
+#imagemFaixa img {
     width: 256px;
     height: 150px;
 }
+
 #textoFaixa h2 {
-    color: var(--vermelho);
-    margin-bottom: 15px;
+    color: var(--branco);
+    margin-bottom:15px;
+    font-size: 2em;
 }
-#textofaixa p {
-    margin-bottom: 50px;
+
+#textoFaixa p {
+    margin-bottom: 40px;
+    font-size: 1.5em;
 }
+
+/******************************************** Seção de Conteudos (Cards) *********************************************/
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#todos {
+    color: var(--branco);
+    margin-top: 30px;
+    /*text-decoration: none;*/
+    font-size: 2em;
+    font-weight: 10000;
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5em;
+
+}
+
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>Fim do Portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -321,7 +405,14 @@ p {
         font-size: 1.2em;
     }
 
+    /********************************************************* Seção de conteudo (Cards) **********************************************************/
+    .card {
+        margin: 10px 10px;
+    }
 }
+
+
+
 
 
 
@@ -427,6 +518,14 @@ p {
     p {
         color: var(--branco);
         font-size: 1.4em;
+    }
+    /****************************************** CARDS ********************************/
+    .containerCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size:1.0em;
+    
     }
 }
 
@@ -541,18 +640,31 @@ p {
     #video iframe {
         margin: 0;
     }
+
     /**********************************faixa de destaque******************/
-    #faixaDestaque{
+    #faixaDestaque {
         background-attachment: fixed;
     }
-    #faixaDestaque .container{
+
+    #faixaDestaque .container {
         flex-direction: row-reverse;
         align-items: center;
     }
-    #imagemFaixa img{
+
+    #imagemFaixa img {
         width: 300px;
     }
-
+    #textoFaixa{
+        color: var(--branco);
+    }
+    /*********************************************************CARDs********************************************/
+    .containerCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size:1.0em;
+    
+    }
 
 
 }

@@ -12,7 +12,7 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header class="container">
+    <header class="container" id="Inicio">
         <!-- Logotipo -->
         <div id="logo">
             <img src="img/logo9.png" alt="academia">
@@ -23,8 +23,8 @@
             <label for="check">&#x268c;</label>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Conteúdo</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Conteúdo ">Conteúdo</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
@@ -44,7 +44,7 @@
             </div>
             <div id="textodestaque">
                 <h2>Resultados que falam por si.</h2>
-                <p> Transforme suor em resultados. A       transformação começa no momento em que você decide tentar.</p>
+                <p> Transforme suor em resultados. A transformação começa no momento em que você decide tentar.</p>
                 <div class="topicos">
                     <img src="img/frango.png" alt="Frango">
                     <p>Seu Frango!</p>
@@ -77,16 +77,65 @@
     <section id="faixaDestaque">
         <div class="container">
             <div id="imagemFaixa">
-                <img src="img/youtube.png" alt="instagram">
+                <img src="img/youtube.png" alt="youtoba">
             </div>
-            <div class="textoFaixa">
-                <h2>Segue</h2>
-                <p>acompanhe para mais treinos</p>
-                <!--<a href="https://www.instagram.com/" target="_blank" class="botao">Segue </a>-->
-                <a href="doc/manual_a88.pdf" class="botao">PDF</a>
+            <div id="textoFaixa">
+                <h2>inscrever-se no YouTube para os treinos.</h2>
+                <p>acompanhe treino atualizados!
+                    (Créditos a Laércio Refundini)
+                </p>
+                <a href="https://www.youtube.com/watch?v=5ZLAxK7jrQ4" target="_blank" class="botao">Assista</a>
             </div>
         </div>
     </section>
+     <!-- Conteúdo (Cartões) -->
+     <section id="conteudo">
+        <div class="container">
+            <h2>Conteúdo</h2>
+            <div class="containerCards">
+                <div class="card">
+                    <img src="img/logocomida (1).jpg" alt="Comida Saudável">
+                    <h3>Alimentação Saudável</h3>
+                    <p>Alimentação saudável é sobre equilíbrio, hidratação e escolhas conscientes promovem saúde e bem-estar.</p>
+                    <a href="#" class="botao">Saiba +</a>
+                </div>
+                <div class="card">
+                    <img src="img/suplementos.jpg" alt="">
+                    <h3>Suplementos</h3>
+                    <p>Suplementos como creatina, pré-treinos e whey ajudam no desempenho, energia e construção muscular.</p>
+                    <a href="#" class="botao">Saiba +</a>
+                </div>
+                <div class="card">
+                    <img src="img/dormir.jpg" alt="">
+                    <h3>Noite Bem Dormida</h3>
+                    <p>Um bom sono é crucial para quem treina, pois auxilia na recuperação muscular, produção hormonal e desempenho.</p>
+                    <a href="#" class="botao">Saiba +</a>
+                </div>
+            </div>
+            <a href="#" id="todos">Conheça todos</a>
+        </div>
+    </section>
+    <!-- Para a seção de contato usar a tag semântica address -->
+    <address>
+        <h1>Contato</h1>
+        <h2>Email</h2>
+        <a href="mailto:mmendoncamascarenha@gmail.com?subject=Contato do site"><img src="img/email.png" alt="e-mail">mmendoncamascarenha@gmail.com</a>
+        <hr>
+
+        <h2>Whatapp</h2>
+        <a href="https://api.whatsapp.com/send?phone=551140028022"><img src="img/whatzaap.png" alt="whatapp">40028922</a>
+        <hr>
+
+        <h2>Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15609821.658883356!2d-52.5684287!3d-17.219196039087997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1733341863540!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>Redes sociais</h2>
+        <a href="https://www.instagram.com/" target="_blank"><img src="img/itaa.png" alt="instagram">Instagram</a>
+    </address>
+
+
+    <!-- Topo do site -->
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo"></a>
 </body>
 
 </html>
