@@ -6,7 +6,7 @@
 /* variáveis */
 :root {
     --azul: #05152b;
-    --azulclaro:#064996;
+    --azulclaro: #064996;
     --branco: #fff;
     --bege: #F5DEB3;
     --preto: #000000;
@@ -14,7 +14,8 @@
     --cinza: #808080;
     --cinzaescuro: #4F4F4F;
     --chocolate: #D2691E;
-    --roxobemescuro:#362121;
+    --roxobemescuro: #362121;
+    --begecerto: #D2B48C;
 
 }
 
@@ -25,12 +26,16 @@
     border: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /************************************************* Layout******************************************/
 body {
     font-family: "Open Sans", serif;
     font-size: 1em;
     /* 1em = 100% ( tamanho padrão )*/
-    background-color: var(--background);
+    background-color: var(--begecerto);
 }
 
 .container {
@@ -43,6 +48,10 @@ body {
 
 }
 
+footer .container{
+    flex-direction: column-reverse;
+
+}
 .botao {
     text-decoration: none;
     color: #fff;
@@ -220,7 +229,7 @@ main h2 {
 
 #textoFaixa h2 {
     color: var(--branco);
-    margin-bottom:15px;
+    margin-bottom: 15px;
     font-size: 2em;
 }
 
@@ -249,7 +258,7 @@ main h2 {
     margin-top: 30px;
     /*text-decoration: none;*/
     font-size: 2em;
-    font-weight: 10000;
+    font-weight: 1000.0;
 }
 
 .containerCards {
@@ -353,6 +362,43 @@ p {
     background-color: #4F4F4F;
 }
 
+/*rodapé*/
+address {
+    padding: 35px 10px 50px 0px;
+    padding: 50px 0px;
+    background-color:var(--cinza);
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#dados {
+    margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+    display: none;
+}
+footer{
+    padding: 50px;
+    background-color: #4e5061;
+    color: #fff;
+    text-align: center;
+}
+#social {
+    margin-bottom: 25px;
+}
+
+
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
 
@@ -409,7 +455,18 @@ p {
     .card {
         margin: 10px 10px;
     }
+    /***********************************************************rodapé**************************************************************/
+
+    .FLex5{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #social{
+        margin: 0;
+    }
 }
+
 
 
 
@@ -519,13 +576,14 @@ p {
         color: var(--branco);
         font-size: 1.4em;
     }
+
     /****************************************** CARDS ********************************/
     .containerCards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        font-size:1.0em;
-    
+        font-size: 1.0em;
+
     }
 }
 
@@ -654,16 +712,29 @@ p {
     #imagemFaixa img {
         width: 300px;
     }
-    #textoFaixa{
+
+    #textoFaixa {
         color: var(--branco);
     }
+
     /*********************************************************CARDs********************************************/
     .containerCards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        font-size:1.0em;
-    
+        font-size: 1.0em;
+    }
+    /******************************************************rodapé**********************************************************/
+    #iconeMapa{
+        display: none;
+    }
+    #googleMaps{
+        display: inline;
+    }
+    .containerFlex6{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
     }
 
 
