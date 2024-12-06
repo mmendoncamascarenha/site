@@ -362,10 +362,10 @@ p {
     background-color: #4F4F4F;
 }
 
-/*rodapé*/
+/****************************************************rodapé*****************************************/
 address {
     padding: 35px 10px 50px 0px;
-    padding: 50px 0px;
+    padding: 50px 10px;
     background-color:var(--cinza);
     color: #fff;
 }
