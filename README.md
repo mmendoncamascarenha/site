@@ -8,31 +8,6 @@
     </a>
 </p>
 
-# 🌐 Site Pessoal - Murillo Mendonça
-
-Este projeto é o meu site pessoal, com o objetivo de apresentar informações sobre mim, minhas habilidades, projetos e formas de contato.
-
-## 📌 Objetivo
-
-Permitir que visitantes conheçam mais sobre quem sou, meus interesses na área de tecnologia e como me encontrar nas redes.
-
-## 🛠️ Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- [Adicione aqui frameworks ou bibliotecas, se estiver usando]
-
-## 📁 Estrutura de Pastas
-
-
-
-
-
-
-
-
-
 # HTML5 e CSS3 
 Estudo do HTML5 e CSS3
 ## Autor
